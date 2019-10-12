@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_public"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="公共部分"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_register"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#fff"
+        android:layout_below="@+id/rl_public"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_register_people"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button_left"
+            android:button="@null"
+            android:gravity="center"
+            android:text="FragmentA"
+            android:textColor="@drawable/selector_home_color_rb_mine"
+            android:textSize="14sp"/>
+
+        <RadioButton
+            android:id="@+id/rb_register_enterprise"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_button_left"
+            android:button="@null"
+            android:gravity="center"
+            android:text="FragmentB"
+            android:textColor="@drawable/selector_home_color_rb_mine"
+            android:textSize="14sp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rg_register"
+        android:background="#fff"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"/>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
